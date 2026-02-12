@@ -2,7 +2,7 @@
 
 A Next.js dashboard for managing and analyzing creator data, built with **shadcn/ui** and **Tailwind CSS**.
 
-## 🚀 Setup Instructions
+## Setup Instructions
 
 1.  **Clone the repository** (or unzip):
     ```bash
@@ -36,7 +36,7 @@ A Next.js dashboard for managing and analyzing creator data, built with **shadcn
 *   **UI Components**: shadcn/ui (100% usage, no external table libraries)
 *   **Testing**: Jest
 
-## 🧠 Decisions & Assumptions
+## Decisions & Assumptions
 
 ### 1. Sorting Logic (Stable & Deterministic)
 *   **Requirement**: Sorting must be stable.
@@ -58,7 +58,7 @@ A Next.js dashboard for managing and analyzing creator data, built with **shadcn
     *   **Rounded Corners**: Used `rounded-2xl` and `rounded-full` for inputs to create a friendly, modern interface.
     *   **Feedback**: Active states, simple hover effects, and clear badges for "Active/Inactive" status.
 
-## 📈 Scalability: Supporting 10k Creators
+## Scalability: Supporting 10k Creators
 
 If this dashboard needed to support **10,000+ creators**, several changes would be required to maintain performance and UX:
 
