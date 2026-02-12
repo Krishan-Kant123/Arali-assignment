@@ -28,7 +28,7 @@ A Next.js dashboard for managing and analyzing creator data, built with **shadcn
     npm test
     ```
 
-## 🛠 Tech Stack
+## Tech Stack
 
 *   **Framework**: Next.js (App Router)
 *   **Language**: TypeScript
