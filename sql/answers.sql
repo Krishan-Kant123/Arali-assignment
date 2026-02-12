@@ -97,7 +97,7 @@ what i am doing:
 
  */
 
-with revenue_cte as (select creator_id,
+with rev as (select creator_id,
 sum(plan_price) as revenue
 from subscriptions
 where status = 'active'
@@ -115,7 +115,7 @@ coalesce(v.views, 0) as views,
 case when v.views = 0 or v.views is null then 0 else revenue * 1000.0 / v.views end
 as revenue_per_1000_views
 from creators c
-left join revenue_cte r on c.id = r.creator_id
+left join rev r on c.id = r.creator_id
 left join views_cte v on c.id = v.creator_id
 order by revenue_per_1000_views desc
 limit 3;
